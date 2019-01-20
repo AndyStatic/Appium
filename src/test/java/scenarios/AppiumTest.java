@@ -3,7 +3,7 @@ package scenarios;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pages.LoginPage;
+import pages.CalculatorMainPage;
 
 public class AppiumTest extends AndroidSetup {
 
@@ -18,8 +18,13 @@ public class AppiumTest extends AndroidSetup {
     }
 
     @Test
-    public void falseLoginTest() throws InterruptedException {
-        new LoginPage(driver).invalidLogin();
+    public void sumTest() throws InterruptedException {
+        new CalculatorMainPage(driver).sum();
+    }
+
+    @Test
+    public void subtractTest() throws InterruptedException {
+        new CalculatorMainPage(driver).subtract();
     }
 
 }
