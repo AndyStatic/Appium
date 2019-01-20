@@ -13,7 +13,7 @@ public class AndroidSetup {
 
     protected void prepareAndroidForAppium() throws MalformedURLException {
         File appDir = new File("/Users/Andrejs K/IdeaProjects/myAppiumProject/apps");
-        File app = new File(appDir, "flipkart.apk");
+        File app = new File(appDir, "calculator.apk");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("device","Android");
 
